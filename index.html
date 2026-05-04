@@ -1488,7 +1488,7 @@ function fat_lancar(){
       tipo: 'faturamento',
       valor: v,
       data: data,
-      loja_id: String(lid)
+      loja_id: lid
     }).then(({ error }) => {
       if(error) console.warn('Supabase insert error:', error.message);
     });
